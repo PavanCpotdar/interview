@@ -217,6 +217,18 @@
 	const myDog = new Dog('Rex', 'German Shepherd');
 	myDog.speak(); // Outputs: Rex barks.
 
+   **//**//**//**
+  	Summary
+		Prototype: Every JavaScript object has a prototype, an object from which it inherits properties and methods.
+
+			Example: Person.prototype.greet allows all Person instances to use the greet method.
+		Inheritance: Objects can inherit properties and methods from other objects through the prototype chain.
+
+		Example: Dog inherits from Animal, allowing Dog instances to use methods defined in Animal.prototype.
+	By understanding prototypes and inheritance, you can leverage the power of JavaScript’s object-oriented features to create more structured and reusable code.
+
+
+
 
 
 
