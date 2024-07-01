@@ -7,8 +7,18 @@
      - Closure Example: Imagine you have a function defined inside another function. The inner function has access to its own scope (variables it declares),
       the scope of the outer function, and also the global scope.
 
-     - Memory of Scope: Even after the outer function finishes executing, the inner function still retains access to the variables and parameters of the outer function. This is closure in action – the inner function "closes over" the scope it was created in.
+     - Memory of Scope: Even after the outer function finishes executing, the inner function still retains access to the variables and parameters of the outer function. This is closure in action – the inner 
+        function "closes over" the scope it was created in.
 
-     - Practical Use: Closures are commonly used for data encapsulation, where variables can be accessed and modified only through specific functions. They also enable functions to remember and access their lexical scope at a later time, which is useful in various programming patterns like callbacks and event handlers.
+     - Practical Use: Closures are commonly used for data encapsulation, where variables can be accessed and modified only through specific functions. They also enable functions to remember and access their lexical             scope at a later time, which is useful in various programming patterns like callbacks and event handlers.
 
-In essence, closure allows JavaScript functions to maintain access to variables from their parent function even after the parent function has finished executing, providing a way to preserve state across multiple calls or asynchronous operations.
+         In essence, closure allows JavaScript functions to maintain access to variables from their parent function even after the parent function has finished executing, providing a way to preserve state across            multiple calls or asynchronous operations.
+
+2. callback function:-  in JavaScript is simply a function that is passed as an argument to another function and is executed after some operation has been completed. Here's a straightforward explanation:
+3. Promises:-  in JavaScript are a way to handle asynchronous operations more easily and cleanly. Here’s a simple explanation:
+        - What is a Promise?: A promise is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value.
+        - States of a Promise:
+
+Pending: Initial state, neither fulfilled nor rejected.
+Fulfilled: The operation completed successfully.
+Rejected: The operation failed.
