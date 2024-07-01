@@ -1,0 +1,14 @@
+1.  closure in JavaScript is when a function "remembers" its lexical scope even when the function is executed outside that lexical scope.
+
+            Here's a breakdown in simpler terms:
+
+     - Lexical Scope: This refers to where variables and functions are defined in your code.
+
+     - Closure Example: Imagine you have a function defined inside another function. The inner function has access to its own scope (variables it declares),
+      the scope of the outer function, and also the global scope.
+
+     - Memory of Scope: Even after the outer function finishes executing, the inner function still retains access to the variables and parameters of the outer function. This is closure in action – the inner function "closes over" the scope it was created in.
+
+     - Practical Use: Closures are commonly used for data encapsulation, where variables can be accessed and modified only through specific functions. They also enable functions to remember and access their lexical scope at a later time, which is useful in various programming patterns like callbacks and event handlers.
+
+In essence, closure allows JavaScript functions to maintain access to variables from their parent function even after the parent function has finished executing, providing a way to preserve state across multiple calls or asynchronous operations.
