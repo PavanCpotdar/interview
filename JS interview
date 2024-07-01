@@ -144,10 +144,13 @@
 
             greet.apply(person, ['Hello', '!']); // Outputs: Hello, Alice!
   3. bind Method
-            The bind method creates a new function that, when called, has its this keyword set to the specified value, with a given sequence of arguments preceding any provided when the new function is called.
-            function greet(greeting, punctuation) {
-                console.log(greeting + ', ' + this.name + punctuation);
-            }            
+        The bind method creates a new function that, when called, 
+	has its this keyword set to the provided value, and 
+	can also have initial arguments.
+
+		function greet(greeting, punctuation) {
+                    console.log(greeting + ', ' + this.name + punctuation);
+               }            
 
             const person = { name: 'Alice' };
 
@@ -164,4 +167,58 @@
      - bind: Creates a new function with a specified this context and optionally prepends arguments to it.
             const newFunction = functionName.bind(thisArg, arg1, arg2, ...)
   ***** These methods give you control over the this value within functions, enabling more flexible and reusable code.
+
+10.  Event bubbling is a concept in JavaScript where an event starts at the target element and then propagates (bubbles) up through the ancestors of that element until it reaches the root of the DOM tree. Let's 
+     break it down in simple terms:
+11.  Event Capturing (also known as "trickling") is the phase where the event starts from the top of the DOM tree and trickles down to the target element, triggering event handlers on its ancestors before 
+   reaching the target element.
+
+12. Prototype and inheritance 
+   -JavaScript uses a prototype-based inheritance system. Here’s a simple explanation of how prototypes and inheritance work in JavaScript.
+
+   * Prototype
+     A prototype is an object from which other objects inherit properties and methods. Every JavaScript object has a prototype, which is another object that it inherits methods and properties from.
+
+	function Person(name, age) {
+ 	   this.name = name;
+ 	   this.age = age;
+	}
+
+	Person.prototype.greet = function() {
+  	  console.log('Hello, my name is ' + this.name);
+	};
+
+	const alice = new Person('Alice', 25);
+	alice.greet(); // Outputs: Hello, my name is Alice
+
+  * Inheritance
+	Inheritance in JavaScript allows one object to inherit properties and methods from another object. This is done through the prototype chain.
+
+	--function Animal(name) {
+ 		   this.name = name;
+		}
+
+	Animal.prototype.speak = function() {
+   		 console.log(this.name + ' makes a noise.');
+		};
+
+	function Dog(name, breed) {
+ 	   Animal.call(this, name); // Call the parent constructor
+   	 this.breed = breed;
+	}
+
+ 	Dog.prototype = Object.create(Animal.prototype); // Inherit from Animal
+	Dog.prototype.constructor = Dog; // Fix the constructor property
+
+	Dog.prototype.speak = function() {
+	    console.log(this.name + ' barks.');
+	};
+
+	const myDog = new Dog('Rex', 'German Shepherd');
+	myDog.speak(); // Outputs: Rex barks.
+
+
+
+
+
 
