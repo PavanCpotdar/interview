@@ -1,0 +1,64 @@
+
+=== Variables ===
+ (function() {
+   var a = b = 3
+ })()
+ console.log(typeof a !== "undefined");
+ console.log(typeof b !== "undefined");
+ console.log(typeof a);
+ console.log(a);
+
+  console.log(null == undefined); // Abstract equality. ToBoolean coercion
+  console.log(null === undefined); // strict equality
+
+    console.log(1 + "2" + "2") 
+    console.log("A" - "B" + "2") 
+    console.log("A" - "B" + 2)
+    console.log(1 + +"2" + "2")
+    console.log(1 - "2" + "2")
+    console.log(+1 + "2" + 2)]
+   
+    let a=[1,2,3] let b=[1,2,3]
+    clg(a==b) clg(a===b)
+
+    Predict the output of this code (function(){ var a=b=c=3 })()
+
+    console.log("Is a undefined?"+(typeof a !=="undefined")) console.log("Is b undefined?"+(typeof b !=="undefined"))
+
+    console.log(0.1+0.2) console.log(0.1+0.2==0.3) console.log(0.1+0.2===0.3). Explain the output.
+
+    for(var i=0;i<5;i++){
+        setTimeout(function(){console.log(i)},1000)
+    } 
+
+=== Strings ===
+
+    Reversing a string without any inbuilt methods
+    Removing repeated characters (printing unique char) from string
+    Removing unique characters (printing repeated char) from string
+    Sentence: sort according to word length
+    Remove vowels from string "hello world"
+    Checking given string is palindrome
+    Count the number of characters in word-'Paradeeepa'
+    Count the number of characters in word excluding special characters- 'Java@Sc#ript'
+    Without creating object, get the count of each character in below format let q = "aaabbbccccd"; output = "a3b3c4d1"; Constraint- recurring       characters always appears consecutively.
+    Reverse number,let m=1234; without coverting string
+    Find the index of first non-repeating character in a word. If there is no non-repeating character return -1
+
+=== Arrays ===
+
+    Numbers, extract duplicates & print them
+    Print the duplicates: let arr = [1, 2, 3, 5, 6, 7, 8, 9, 5, 9, 4, 5, 3, 5, 9]; //o/p :- 3,5,9
+    Print unique elements of an array
+Convert given series 3,0,1,2,3,4,0,0,6,4,0,8,6,0 to 3,1,2,3,4,5,6,4,8,6,0,0,0,0,0,0 (pushing zeros to end of the array)
+    Sort all the 1's to the extreme right end of these elements 0,1,3,1,6,1,8,1,9,0,1,5,2,6 ?
+    Q.3 & Q.4 Pushing the 0's & 1's to the left
+    const data=[1,2,3,3,4,52,3,2,3,1,1] o/p >> 2_4_6_108
+    Bubble sort
+    Remove repeated objects from an array4
+    Write JS program for the intersections of an Array: // Inputs: A = [3, 4, 5, 6, 4, 5]; B = [3, 5, 4, 6, 9, 11, 12]; // Output: // C = [3, 4, 5, 6]
+    Find missing element in Array is :[11,12,14,15,17,18,19,20]
+    Flatten the array elements in the array: const input = [1, 3, 5, 6, [22, 33], 7, [8, 9, 10]];
+    In Engligh language, there is concept called as root & dervatives =>
+    dictionary=['cat','bat','sat'], sentence (string) - 'the cattle battled for long on saturday'
+    if sentence consists of derivates, replace that derivative with root. If there are multiple roots forming the derivate, replace with root  with shortest length. Output has to be string consisting of root words if derivatives are found in given sentence.
