@@ -118,4 +118,50 @@
             Shallow Copy: Copies the top-level properties, but nested objects are shared between the original and the copy.
             Deep Copy: Creates a completely independent copy, including all nested objects.
 
-9. 
+9.  call, apply, and bind in JavaScript
+            - In JavaScript, call, apply, and bind are methods that allow you to set the this context for a function. This can be particularly useful when you want a function to operate in the context of a 
+              different object. Here’s a simple explanation of each: 
+    1. Call Method
+            The call method allows you to invoke a function with a specified this context and arguments passed individually.
+           
+            function greet(greeting, punctuation) {
+                console.log(greeting + ', ' + this.name + punctuation);
+            }
+
+            const person = { name: 'Alice' };
+
+            greet.call(person, 'Hello', '!'); // Outputs: Hello, Alice!
+   2. apply Method
+            The apply method is similar to call, but it accepts arguments as an array (or array-like object).
+
+            Example:
+
+            function greet(greeting, punctuation) {
+                console.log(greeting + ', ' + this.name + punctuation);
+            }
+
+            const person = { name: 'Alice' };
+
+            greet.apply(person, ['Hello', '!']); // Outputs: Hello, Alice!
+  3. bind Method
+            The bind method creates a new function that, when called, has its this keyword set to the specified value, with a given sequence of arguments preceding any provided when the new function is called.
+            function greet(greeting, punctuation) {
+                console.log(greeting + ', ' + this.name + punctuation);
+            }            
+
+            const person = { name: 'Alice' };
+
+            const greetPerson = greet.bind(person);
+
+            greetPerson('Hello', '!'); // Outputs: Hello, Alice!
+
+   **//**/***
+ Summary
+     - call: Invokes a function with a specified this context and arguments passed individually.
+              functionName.call(thisArg, arg1, arg2, ...)
+     - apply: Invokes a function with a specified this context and arguments passed as an array.
+            functionName.apply(thisArg, [arg1, arg2, ...])
+     - bind: Creates a new function with a specified this context and optionally prepends arguments to it.
+            const newFunction = functionName.bind(thisArg, arg1, arg2, ...)
+  ***** These methods give you control over the this value within functions, enabling more flexible and reusable code.
+
