@@ -38,4 +38,14 @@
                         reject with the reason of the first promise that rejected.
             2.Promise.race
                         Promise.race returns a promise that resolves or rejects as soon as one of the promises in the array resolves or rejects.
-            3.
+            3.Promise.allSettled
+                        Promise.allSettled waits for all the promises to settle (either resolve or reject), and returns an array of objects describing the outcome of each promise.
+            4. Promise.any 
+                        Promise.any takes an iterable of Promise objects and returns a single Promise that resolves as soon as any of the promises in the iterable resolves. If no promises in the iterable resolve 
+                        (if all of the given promises are rejected), then the returned promise is rejected with an AggregateError.
+      ----Summary
+            Promise.all: Waits for all promises to resolve or any to reject.
+            Promise.race: Waits for the first promise to resolve or reject.
+            Promise.allSettled: Waits for all promises to settle, regardless of their outcome.
+            Promise.any: Waits for the first promise to resolve (ignores rejections until all promises are rejected).
+
