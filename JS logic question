@@ -41,7 +41,7 @@
     Checking given string is palindrome
     Count the number of characters in word-'Paradeeepa'
     Count the number of characters in word excluding special characters- 'Java@Sc#ript'
-    Without creating object, get the count of each character in below format let q = "aaabbbccccd"; output = "a3b3c4d1"; Constraint- recurring       characters always appears consecutively.
+   **//** Without creating object, get the count of each character in below format let q = "aaabbbccccd"; output = "a3b3c4d1"; Constraint- recurring       characters always appears consecutively.
     Reverse number,let m=1234; without coverting string
     Find the index of first non-repeating character in a word. If there is no non-repeating character return -1
 
