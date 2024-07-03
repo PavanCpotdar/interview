@@ -227,9 +227,10 @@
 		Example: Dog inherits from Animal, allowing Dog instances to use methods defined in Animal.prototype.
 	By understanding prototypes and inheritance, you can leverage the power of JavaScript’s object-oriented features to create more structured and reusable code.
 
+13. DOM (Document Object model)
+	The DOM(Document Object Model) represents the web page as a tree-like structure that allows JavaScript to dynamically access and manipulate the content and structure of a web page
 
-
-
+14. 
 
 
 
