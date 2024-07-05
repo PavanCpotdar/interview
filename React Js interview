@@ -1,2 +1,72 @@
-1. Cross-platform is the ability of software applications to operate on multiple operating systems (OS) or hardware platforms with little or no modification. 
-2.
+1.What are the major features of ReactJS?
+
+   ** The major features of ReactJS are as follows,
+   - It uses VirtualDOM instead RealDOM considering that RealDOM manipulations are expensive.
+   - Supports server-side rendering
+   - Follows Unidirectional data flow or data binding
+   - Uses reusable/composable UI components to develop the view
+
+=> Cross-platform is the ability of software applications to operate on multiple operating systems (OS) or hardware platforms with little or no modification. 
+2. Hooks are a feature that was introduced in React 16.8. They enable you to use state and other React features without having to write a class.
+   They’re called Hooks because they allow you to “hook” into React features. 
+   One example is the useState Hook, which allows you to add React state to function components.
+
+   - With Hooks, you can extract stateful logic from a component so it can be tested independently and reused. 
+     Hooks allow you to reuse stateful logic without changing your component hierarchy.
+      This makes it easy to share Hooks among many components or with the community.
+
+3. Props
+    Props (short for properties) are used to pass data from a parent component to a child component. 
+    They are read-only, meaning that a child component cannot modify the props it receives.
+    Props allow components to be dynamic and reusable.
+
+    Usage: To pass information from one component to another.
+    Immutable: Once set, they cannot be changed by the child component
+4.State
+    State is used to manage data that changes over time within a component. 
+    Unlike props, a component can update its own state. 
+    When the state changes, the component re-renders to reflect those changes.
+
+    Usage: To manage dynamic data within a component.
+    Mutable: Can be changed using the setState method in class components or the useState hook in functional components.
+
+5. Class components in React are a way to define components using JavaScript classes. 
+    They have more features compared to functional components, such as the ability to manage local state and lifecycle methods. 
+    Here's a simple explanation and example.  
+
+    class Greeting extends Component {
+          constructor(props) {
+                  super(props);
+                  this.state = { name: 'World' }; // Initial state
+                            }
+                  render() {
+                        return()
+                      }
+
+  Summary
+    Class Components: Use JavaScript classes to create components.
+    State: Managed internally, allows the component to be dynamic.
+    Lifecycle Methods: Offer hooks into different phases of the component's life.
+    Event Handlers: Methods within the class can handle events and update state.
+    Class components provide a powerful way to build dynamic and stateful components in React.
+    However, with the introduction of hooks, functional components are often preferred for their simplicity and ease of   use.
+
+6.  Refs provide a way to access DOM nodes or React elements created in the render method.
+      They should be avoided in most cases, however, they can be useful when we need direct access to the DOM element 
+       or an  instance of a component.
+
+**There are a few good use cases for refs:
+  -  Managing focus, text selection, or media playback.
+
+  -  Triggering imperative animations.
+
+  -  Integrating with third-party DOM libraries.
+
+    Refs are created using React.createRef() and attached to React elements via the ref attribute. 
+    Refs are commonly assigned to an instance property when a component is constructed so they can be referenced       throughout the component.
+
+7. What is Context API in ReactJS?
+      Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+ ---Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language. Using context, we can avoid passing 
+   props through intermediate elements.
+
