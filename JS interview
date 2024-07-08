@@ -299,6 +299,58 @@ student1.study(); // Output: Bob is studying in grade 10th.
 	- Arrow Functions: this is  inherit this from the surrounding non-arrow function. 
 	- Event Handlers: this refers to the element that received the event.
 
+16. Deboncing 
+
+function handle(){
+    console.log("clicked ")
+}
+function debonce (func,time){
+    console.log("number")
+    let timer;
+    return function(...args){
+        let context =this;
+        let argumnets =args;
+       
+        clearTimeout(timer);
+         timer = setTimeout(()=>{
+            func.apply(context , argumnets);
+        },time);
+
+    }
+
+}
+
+const input =document.querySelector('#inputDebon');
+input.addEventListener('keypress',debonce(handle,500))
+
+
+
+17. Throtling
+	-In JavaScript, throttling is a technique used to limit the number of times a function is executed over a period of time. 
+	 This is particularly useful for optimizing performance in scenarios where a function 
+     	 might be called frequently, such as during window resizing, scrolling, or handling user input events like mouse movements.
+
+function throttling (func,time){
+function handle(){
+    console.log("new Date().getTime()",new Date().getTime())
+    console.log("clicked ds")
+}
+
+   let last =0;
+
+   return function(...args){
+    let now= new Date().getTime();
+
+    if(now-last < time) return;
+    last = now;
+    return func(...args);
+   }
+
+}
+const throt=throttling(handle,2000)
+
+let inputK =document.querySelector('#inputTrott');
+inputK.addEventListener('keypress',()=> throt())
 
 
 
