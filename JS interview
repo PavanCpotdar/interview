@@ -1,3 +1,12 @@
+ JavaScript is a programming language that allows you to create dynamic and interactive content on websites. It can be used to do things like:
+
+	 - Show or hide information when you click a button
+	 - programing and scripting language 
+ 	 - Used create dynamic webpages 
+	 - It is also called synchronous single
+  	  threaded language because it execute code line
+   	  by line synchronously .
+
 1.  closure in JavaScript is when a function "remembers" its lexical scope even when the function is executed outside that lexical scope. (2hrs took for revision)
             --A closure is a function that remembers the environment (variables) in which it was created, even after that environment has gone.
 
@@ -218,6 +227,33 @@
 
 	const myDog = new Dog('Rex', 'German Shepherd');
 	myDog.speak(); // Outputs: Rex barks.
+---------------------------------------------------------------------------------------------
+ Example 2:-
+  	class Person {
+    				constructor(name, age) {
+        			this.name = name;
+      				this.age = age;
+  			  }
+
+   	 greet() {
+        	console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    				}
+		}
+
+	class Student extends Person {
+ 			   constructor(name, age, grade) {
+    			    super(name, age); // Calls the parent class's constructor
+      			  this.grade = grade;
+  		 	 }
+
+  		  study() {
+      			  console.log(`${this.name} is studying in grade ${this.grade}.`);
+	 	   }
+		}
+
+let student1 = new Student('Bob', 20, '10th');
+student1.greet(); // Output: Hello, my name is Bob and I am 20 years old.
+student1.study(); // Output: Bob is studying in grade 10th.
 
    **//**//**//**
   	Summary
