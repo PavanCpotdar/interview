@@ -1,4 +1,28 @@
-    ❖ NPM(Node Package Manager) is used to manage the dependencies for your React project, including the React library itself.
+ - Error bondary 
+ - authenticated and autharised differnce
+ -provite routing example 
+
+    JavaScript is a dynamic (or dynamically typed) language.
+    Key Characteristics of Dynamic Typing in JavaScript:
+    No Type Declarations: You do not need to declare variable types. Variables can hold any type of value and can change types at runtime.
+    let value = 42;    // value is a number
+    value = "hello";   // value is now a string
+    Type Inference: The type of a variable is determined by the value it holds. The type can change as the variable is assigned new values.
+    let message = "This is a string"; // JavaScript infers that message is a string
+    message = 100;                    // JavaScript now infers that message is a number
+    Runtime Type Checking: Type errors are often only caught during execution, not during the compilation phase (since there's no compilation step as in statically typed languages).
+
+javascript
+Copy code
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(5, 10));    // 15
+console.log(add(5, "10"));  // "510"
+
+
+❖ NPM(Node Package Manager) is used to manage the dependencies for your React project, including the React library itself.
 1.What are the major features of ReactJS?
 
    ** The major features of ReactJS are as follows,
