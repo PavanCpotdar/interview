@@ -1,3 +1,4 @@
+    ❖ NPM(Node Package Manager) is used to manage the dependencies for your React project, including the React library itself.
 1.What are the major features of ReactJS?
 
    ** The major features of ReactJS are as follows,
@@ -69,4 +70,14 @@
       Context provides a way to pass data through the component tree without having to pass props down manually at every level.
  ---Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language. Using context, we can avoid passing 
    props through intermediate elements.
+
+8. Destructuring in JavaScript is a convenient way of extracting multiple values from arrays or objects and assigning them to variables. This feature makes your code cleaner and more readable by allowing you to unpack values directly from data structures.
+
+9.We use Babel with React to transpile the JSX code into simple React functions that can be understood by browsers.
+  1. Transpiling JSX:
+  React uses JSX, a syntax extension that allows you to write HTML-like code within JavaScript.
+  Browsers cannot understand JSX directly, so Babel transpiles it into regular JavaScript functions that the browser can interpret.
+  For example, the JSX code <div>Hello</div> is transformed into React.createElement('div', null, 'Hello').
+
+
 
