@@ -1,4 +1,4 @@
- - Error bondary 
+  - Error bondary 
  - authenticated and autharised differnce
  -provite routing example 
 
@@ -91,9 +91,16 @@ console.log(add(5, "10"));  // "510"
     Refs are commonly assigned to an instance property when a component is constructed so they can be referenced       throughout the component.
 
 7. What is Context API in ReactJS?
-      Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+      React Context API is a part of the React library that allows you to pass data down the component tree without explicitly passing the props through every level.
+     	It provides a way to share data between components, even if they are not directly related or nested in each other.
  ---Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language. Using context, we can avoid passing 
    props through intermediate elements.
+*** Use React Context API:
+  	1. Small to medium-sized applications
+
+			2. Fewer levels of data sharing
+
+			3. Component-specific state:
 
 8. Destructuring in JavaScript is a convenient way of extracting multiple values from arrays or objects and assigning them to variables. This feature makes your code cleaner and more readable by allowing you to unpack values directly from data structures.
 
@@ -103,5 +110,67 @@ console.log(add(5, "10"));  // "510"
   Browsers cannot understand JSX directly, so Babel transpiles it into regular JavaScript functions that the browser can interpret.
   For example, the JSX code <div>Hello</div> is transformed into React.createElement('div', null, 'Hello').
 
+10.In React, higher-order functions (HOFs) are often used to create higher-order components (HOCs).
+    An HOC is a function that takes a component and returns a new component with additional props or functionality. 
+    This pattern is useful for code reuse, logic, and behavior across multiple components.
+  ** Example withLoader
+import React from 'react';
+
+  // This is the higher-order component
+    function withLoading(Component) {
+     return function WithLoadingComponent({ isLoading, ...props }) {
+    if (!isLoading) return <Component {...props} />;
+    return <div>Loading...</div>;
+   };
+   }
+   export default withLoading;
+*****
+   In React, Higher-Order Components (HOCs) are not built-in components provided by React itself but rather a design pattern used to create reusable components. 
+   However, there are several well-known HOCs that are widely used in the React ecosystem, especially in conjunction with libraries like React Router, Redux, and others.
+   Here are some common HOCs that you might encounter:
+  real time  example withRouter
+
+11.Redux
+ Redux is a popular JavaScript library commonly used with React for managing state in applications. 
+ It follows a predictable state container pattern and provides a centralised store to hold the application state.
+  
+****Here are some advantages of using Redux:
+				Centralized state management: Redux provides a centralised location for storing the state of an application, which makes it easier to manage and debug.
+				Predictable state updates: Since the state of an application can only be updated through actions and reducers, the state changes become predictable and easy to reason about.
+				Time-travel debugging: Redux allows you to trace the state of an application at any point in time, which makes debugging easier
+
+   when to use
+  ---Use Redux:
+		1. Large and complex applications
+
+		2. Deeply nested components
+
+		3. Asynchronous data flow
 
 
+12. Reconciliation in React is the process of efficiently updating the actual DOM (Document Object Model) when the state or props of a component change.
+			Here's how it works:
+		1. Virtual DOM (VDOM):
+					React maintains a lightweight representation of the actual DOM in memory, known as the Virtual DOM. When you change the state or props of a component, React updates the Virtual DOM first.
+		2. Diffing Algorithm:
+			 React then runs a diffing algorithm that compares the new Virtual DOM with the previous one. This algorithm identifies the specific changes that need to be made to the actual DOM.
+
+13. Flux is a design pattern and architecture for managing application state and data flow in a predictable way. It was introduced by Facebook alongside React to address the complexity of managing state in large-
+ 		scale applications. Flux helps to ensure that data flows in a single direction, making the application easier to understand and debug.
+ *** Advantages of Flux
+			Predictable State Management: With a single source of truth, the state is predictable and easier to manage.
+			Unidirectional Data Flow: Data flows in one direction, reducing the complexity of data handling.
+			Separation of Concerns: Different parts of the application (actions, dispatcher, stores, views) have well-defined roles.
+
+14.Comparison with Redux
+					Redux is a state management library that follows the Flux architecture but simplifies it further. Key differences include:
+
+			Single Store: Redux uses a single store instead of multiple stores.
+			Pure Functions: Redux relies on pure functions called reducers to update the state.
+			Middleware: Redux introduces middleware for handling side effects like asynchronous actions
+15.
+				***Benefits of Synthetic Events
+			Consistency: Provides a consistent event system across all browsers.
+			Performance: Event pooling reduces memory usage and improves performance.
+			Convenience: Simplifies event handling by abstracting away browser-specific quirks.
+In summary, Synthetic Events in React provide a consistent, performant, and convenient way to handle events across different browsers, making it easier for developers to write cross-browser compatible code.
