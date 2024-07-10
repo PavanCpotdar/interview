@@ -352,6 +352,30 @@ const throt=throttling(handle,2000)
 let inputK =document.querySelector('#inputTrott');
 inputK.addEventListener('keypress',()=> throt())
 
+18.Higher ordr function:-
+ 	A higher-order function in JavaScript is a function that either takes one or more functions as arguments, returns a function, or both. 
+	Higher-order functions are a key concept in functional programming, allowing for more abstract and reusable code.
+   1.Functions as Arguments:
+	A common example is array methods like map, filter, and reduce.
+	javascript
+   2. Functions as Return Values:
+	Higher-order functions can return other functions.
+   3. Combining Functions:
+	Higher-order functions can be used to create more complex functions by combining simpler ones.
+ *** Practical Use Cases
+	Event Handling:
+		Passing callback functions to event listeners.
+	Asynchronous Programming:
+		Handling asynchronous operations with callbacks, promises, and async/await.
+	Functional Utilities:
+		Using utility functions from libraries like Lodash.
+ ****Advantages of Higher-Order Functions
+	Reusability: They allow you to write more generic and reusable code.
+	Abstraction: They help in abstracting common patterns and operations.
+	Functional Composition: They enable the composition of functions to create more complex operations from simpler ones.
+	Higher-order functions are a powerful tool in JavaScript, making it easier to write clean, maintainable, and reusable code.
+
+
 
 
 
