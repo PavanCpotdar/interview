@@ -374,6 +374,10 @@ inputK.addEventListener('keypress',()=> throt())
 	Abstraction: They help in abstracting common patterns and operations.
 	Functional Composition: They enable the composition of functions to create more complex operations from simpler ones.
 	Higher-order functions are a powerful tool in JavaScript, making it easier to write clean, maintainable, and reusable code.
+19. REST API :
+	For a front-end developer, a REST API (Representational State Transfer Application Programming Interface)
+	is a set of rules and conventions for building and interacting with web services. 
+	REST APIs enable communication between a client (e.g., a web application) and a server, allowing the client to request and manipulate data on the server.
 
 
 
