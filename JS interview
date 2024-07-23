@@ -112,7 +112,25 @@
             Rest Operator (...): Collects multiple elements or properties into a single array or object.
             These operators make working with arrays, objects, and function arguments more flexible and concise in JavaScript.
 
+ **//** Destructuring in JavaScript is a convenient way of extracting multiple values from arrays or objects and assigning them to variables.
+	- This feature makes your code cleaner and more readable by allowing you to unpack values directly from data structures.
+	- With array destructuring, you can assign elements of an array to variables in a single line of code.
+	- You can skip elements in the array by using extra commas.const numbers = [1, 2, 3, 4, 5];
+		const [first, , third] = numbers;
+	- You can assign default values to variables in case the array does not have enough elements.const [a, b, c = 3] = numbers;
+	- With object destructuring, you can extract properties from an object and assign them to variables
+	- You can rename variables while destructuring. const { name: fullName, age: years } = person;
+	- You can assign default values to variables in case the property does not exist. const { name, age = 25 } = person;
 
+	Using Rest Operator
+	You can use the rest operator (...) to collect the remaining elements into a single variable.
+	const numbers = [1, 2, 3, 4, 5];
+	const [first, second, ...rest] = numbers;
+
+	console.log(first); // 1
+	console.log(second); // 2
+	console.log(rest); // [3, 4, 5]
+ 
 8. Shallow copy and deep copy
             When you copy an object or array in JavaScript, you can create a shallow copy or a deep copy
        1.Shallow 
