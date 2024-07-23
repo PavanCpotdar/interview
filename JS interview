@@ -318,6 +318,11 @@ student1.study(); // Output: Bob is studying in grade 10th.
 	- Event Handlers: this refers to the element that received the event.
 
 16. Deboncing 
+	Debouncing and throttling are two techniques used to control the rate at which a function is executed in JavaScript, especially when dealing with events that fire frequently. Both are essential for improving performance and ensuring efficient use of resources, but they work in different ways.
+
+	* Debouncing
+	- Debouncing ensures that a function is only called after a specified amount of time has passed since the last time the event was triggered.
+	* 
 
 function handle(){
     console.log("clicked ")
