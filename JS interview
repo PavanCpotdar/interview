@@ -134,7 +134,8 @@
 8. Shallow copy and deep copy
             When you copy an object or array in JavaScript, you can create a shallow copy or a deep copy
        1.Shallow 
-            A shallow copy of an object or array is a new object or array that contains references to the same elements as the original. This means that if the elements are objects themselves, the shallow copy             will still refer to the same nested objects as the original.
+            A shallow copy of an object or array is a new object or array that contains references to the same elements as the original.
+	    This means that if the elements are objects themselves, the shallow copy will still refer to the same nested objects as the original.
             Example :=== const shallowCopy = [...originalArray]; // or originalArray.slice()
                         const shallowCopy = { ...originalObject }; // or Object.assign({}, originalObject)
       2. Deep copy
@@ -147,9 +148,9 @@
             Shallow Copy: Copies the top-level properties, but nested objects are shared between the original and the copy.
             Deep Copy: Creates a completely independent copy, including all nested objects.
 
-9.  call, apply, and bind in JavaScript
+9.  call, apply, and bind in JavaScript ;
             - In JavaScript, call, apply, and bind are methods that allow you to set the this context for a function. This can be particularly useful when you want a function to operate in the context of a 
-              different object. Here’s a simple explanation of each: 
+              different object. Here’s a simple explanation of each: /
     1. Call Method
             The call method allows you to invoke a function with a specified this context and arguments passed individually.
            
