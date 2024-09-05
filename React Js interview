@@ -174,3 +174,36 @@ import React from 'react';
 			Performance: Event pooling reduces memory usage and improves performance.
 			Convenience: Simplifies event handling by abstracting away browser-specific quirks.
 In summary, Synthetic Events in React provide a consistent, performant, and convenient way to handle events across different browsers, making it easier for developers to write cross-browser compatible code.
+
+
+16. How to optimize react app performance
+Here are key performance optimization strategies for React applications:
+
+1.Use React.memo: Memoize functional components to prevent unnecessary re-renders.
+
+2.Use PureComponent: Extend React.PureComponent for class components to automatically perform a shallow comparison on props and state.
+
+3.Code Splitting: Implement code splitting using React.lazy and Suspense to load components only when needed.
+
+4.Avoid Inline Functions and Objects: Define functions and objects outside the render method to avoid re-creating them on every render.
+
+5.Use useCallback and useMemo: Memoize functions and complex calculations to avoid unnecessary recalculations.
+
+6.Debounce or Throttle User Inputs: Implement debouncing or throttling for functions triggered by user inputs, such as search or resizing events.
+
+7.Efficient State Management: Avoid unnecessary re-renders by using local component state wisely and minimizing global state changes.
+
+8.Lazy Loading Images and Components: Load images and components lazily to reduce the initial load time.
+
+9.Use Production Build: Always deploy the production build of React to ensure optimizations like minification and dead code elimination.
+
+10.Optimized Asset Loading: Use tools like Webpack to optimize asset loading (e.g., bundling, minification).
+
+10.Optimize Rendering Logic: Break down complex components into smaller, manageable ones to isolate rendering logic.
+
+11.Avoid Deeply Nested Components: Refactor deeply nested components to improve readability and performance.
+
+12.Use Error Boundaries: Implement error boundaries to catch and handle exceptions, preventing crashes.
+
+Profile and Monitor Performance: Regularly use React DevTools Profiler and other monitoring tools to identify and fix performance bottlenecks.
+
