@@ -155,6 +155,11 @@ import React from 'react';
 		2. Diffing Algorithm:
 			 React then runs a diffing algorithm that compares the new Virtual DOM with the previous one. This algorithm identifies the specific changes that need to be made to the actual DOM.
 
+	-The Virtual DOM in React is an in-memory representation of the real DOM that updates efficiently when the state of a component changes.
+	-When a change occurs, React creates a new virtual DOM and compares it with the previous version using a diffing algorithm. 
+	-This process, called reconciliation, identifies the minimal changes needed to update the real DOM. 
+	-React then applies only these updates, improving performance by avoiding costly full DOM re-renders.
+
 13. Flux is a design pattern and architecture for managing application state and data flow in a predictable way. It was introduced by Facebook alongside React to address the complexity of managing state in large-
  		scale applications. Flux helps to ensure that data flows in a single direction, making the application easier to understand and debug.
  *** Advantages of Flux
