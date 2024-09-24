@@ -404,6 +404,20 @@ inputK.addEventListener('keypress',()=> throt())
 	is a set of rules and conventions for building and interacting with web services. 
 	REST APIs enable communication between a client (e.g., a web application) and a server, allowing the client to request and manipulate data on the server.
 
+20. Event Loop:
+
+	The event loop is a core concept that allows JavaScript to handle asynchronous operations despite being single-threaded.
+	When an asynchronous operation is initiated (like a setTimeout or an API call), it is sent to the browser's Web API (outside of the JavaScript engine).
+	Once the operation completes, a callback is placed in the callback queue. 
+	The event loop continuously checks if the call stack is empty and, if so, pushes tasks from the callback queue into the call stack for execution.
+
+21. Microtasks and Macrotasks:
+
+	Microtasks include promises and process.nextTick (in Node.js).
+	They are processed after the currently executing script finishes but before any rendering or macrotasks.
+	Macrotasks include operations like setTimeout, setInterval, and I/O operations. They are handled after microtasks.
+	Example showing the microtask queue (promises):
+
 
 
 
